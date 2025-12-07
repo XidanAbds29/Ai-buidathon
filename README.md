@@ -258,6 +258,28 @@ Visit **http://localhost:3000** to access the dashboard.
 
 ---
 
+---
+
+## 🛡️ Compliance & Security Framework
+
+Our architecture is built "Privacy-First" to meet global and local regulatory standards.
+
+### 1. ISO 27001 (Information Security)
+*   **Data Encryption**: All PII (Personally Identifiable Information) is encrypted at rest (AES-256) and in transit (TLS 1.3).
+*   **Access Control**: Role-Based Access Control (RBAC) ensures only authorized MFI officers can view full credit reports.
+
+### 2. GDPR (General Data Protection Regulation)
+*   **Right to Explain**: Our **SHAP-based Explainability** fulfills the requirement for "Meaningful Information about the Logic involved" in automated decision-making (Article 22).
+*   **Data Minimization**: We only process the specific meta-data fields required for scoring, not raw message contents or voice logs.
+*   **Consent Management**: Explicit opt-in required via the Borrowers App before accessing Telco/MFS data.
+
+### 3. BFIU (Bangladesh Financial Intelligence Unit)
+*   **KYC Integration**: The "One-Click Apply" verifies identity against the porichoy.gov.bd (NID) database.
+*   **AML (Anti-Money Laundering)**: The **Fraud Detection Graph** actively monitors for circular transactions and "smurfing" patterns typical of money laundering.
+*   **Audit Trails**: Immutable logs of all credit decisions are maintained for regulatory inspection.
+
+---
+
 ## 📜 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
